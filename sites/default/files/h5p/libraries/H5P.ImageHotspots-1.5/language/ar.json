@@ -1,0 +1,51 @@
+{
+  "semantics":[
+    {
+      "label":"صورة الخلفية",
+      "description":"صورة تظهر في خلفية النشاط"
+    },
+    {
+      "label":"اللون",
+      "description":"لون النقاط الفعالة محددة باستخدام رمز اللون هيكس",
+      "default":"#981d99",
+      "spectrum":{
+        
+      }
+    },
+    {
+      "entity":"الخطوة",
+      "label":"الخطوات",
+      "field":{
+        "label":"الخطوة",
+        "fields":[
+          {
+            "label":"Position",
+            "description":"Click on the thumbnail image to place the hotspot",
+            "fields":[
+              {
+                
+              },
+              {
+                
+              }
+            ]
+          },
+          {
+            "label":"Cover entire frame on popup",
+            "description":"When the user clicks the hotspot the popup will cover the entire background image"
+          },
+          {
+            "label":"عنوان",
+            "description":"optional"
+          },
+          {
+            "label":"محتويات منبثقة",
+            "field":{
+              "label":"Content Item"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

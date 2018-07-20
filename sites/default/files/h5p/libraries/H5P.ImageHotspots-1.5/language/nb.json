@@ -1,0 +1,51 @@
+{
+  "semantics":[
+    {
+      "label":"Bakgrunnsbilde",
+      "description":"Bilde brukt som bakgrunn"
+    },
+    {
+      "label":"Punktfarge",
+      "description":"Fargen på punktene (spesifisert med heksadesimal fargekode)",
+      "default":"#981d99",
+      "spectrum":{
+        
+      }
+    },
+    {
+      "entity":"punkt",
+      "label":"Punkter",
+      "field":{
+        "label":"Punkt",
+        "fields":[
+          {
+            "label":"Posisjon",
+            "description":"Klikk på bildet for å plassere punktet",
+            "fields":[
+              {
+                
+              },
+              {
+                
+              }
+            ]
+          },
+          {
+            "label":"Dekk hele bakgrunnsbildet",
+            "description":"Når brukeren klikker vil popup dekke hele bakgrunnsbildet"
+          },
+          {
+            "label":"Overskrift",
+            "description":"Valgfri overskrift for popup"
+          },
+          {
+            "label":"Innhold",
+            "field":{
+              "label":"Innholdselement"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

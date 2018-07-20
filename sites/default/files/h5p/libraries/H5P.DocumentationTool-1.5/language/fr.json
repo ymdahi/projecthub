@@ -1,0 +1,41 @@
+{
+  "semantics": [
+    {
+      "label": "Titre",
+      "description": "Titre pour cette documentation"
+    },
+    {
+      "label": "Titre du menu de navigation"
+    },
+    {
+      "label": "Eléments",
+      "widgets": [
+        {
+          "label": "Default"
+        }
+      ],
+      "entity": "Element",
+      "field": {
+        "label": "Type de contenu",
+        "description": "Bibliothèque de contenu possible pour cet élément."
+      }
+    },
+    {
+      "label": "Localize documentation tool buttons",
+      "fields": [
+        {
+          "label": "Previous button label",
+          "default": "Previous"
+        },
+        {
+          "label": "Next button label",
+          "default": "Next"
+        },
+        {
+          "label": "Close button label",
+          "default": "Close"
+        }
+      ]
+    }
+  ]
+}

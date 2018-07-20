@@ -1,0 +1,51 @@
+{
+  "semantics":[
+    {
+      "label":"Immagine di sfondo",
+      "description":"Immagine impostata come sfondo."
+    },
+    {
+      "label":"Colore",
+      "description":"Il colore dei punti focali viene impostato utilizzando un codice esadecimale.",
+      "default":"#981d99",
+      "spectrum":{
+        
+      }
+    },
+    {
+      "entity":"punto focale",
+      "label":"Punti focali",
+      "field":{
+        "label":"Punto focale",
+        "fields":[
+          {
+            "label":"Position",
+            "description":"Click on the thumbnail image to place the hotspot",
+            "fields":[
+              {
+                
+              },
+              {
+                
+              }
+            ]
+          },
+          {
+            "label":"Cover entire frame on popup",
+            "description":"When the user clicks the hotspot the popup will cover the entire background image"
+          },
+          {
+            "label":"Testata",
+            "description":"optional"
+          },
+          {
+            "label":"Popup contenuto",
+            "field":{
+              "label":"Content Item"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

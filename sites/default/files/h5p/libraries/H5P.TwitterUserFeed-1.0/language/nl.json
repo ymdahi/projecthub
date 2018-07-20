@@ -1,0 +1,18 @@
+{
+  "semantics": [
+    {
+      "englishLabel": "Username on Twitter",
+      "label": "Gebruikersnaam op Twitter",
+      "englishDescription": "The username we'll be fetching tweets from",
+      "description": "De gebruikersnaam waarvan we tweets zullen ophalen"
+    },
+    {
+      "englishLabel": "Show replies",
+      "label": "Toon antwoorden"
+    },
+    {
+      "englishLabel": "Number of tweets",
+      "label": "Aantal tweets"
+    }
+  ]
+}

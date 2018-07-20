@@ -1,0 +1,51 @@
+{
+  "semantics":[
+    {
+      "label":"Taustakuva",
+      "description":"Taustakuva hotspoteille."
+    },
+    {
+      "label":"Väri",
+      "description":"Hotspotien väri heksamuodossa",
+      "default":"#981d99",
+      "spectrum":{
+        
+      }
+    },
+    {
+      "entity":"hotspot",
+      "label":"Hotspotit",
+      "field":{
+        "label":"Hotspot",
+        "fields":[
+          {
+            "label":"Sijainti",
+            "description":"Klikkaa pikkukuvaa sijoittaaksesi hotspotin",
+            "fields":[
+              {
+                
+              },
+              {
+                
+              }
+            ]
+          },
+          {
+            "label":"Täytä koko alue",
+            "description":"Käyttäjän klikatessa hotspotia aukeava ponnahdusikkuna peittää taustakuvan kokonaan"
+          },
+          {
+            "label":"Otsikko",
+            "description":"valinnainen"
+          },
+          {
+            "label":"Ponnahdusikkunan sisältö",
+            "field":{
+              "label":"Sisältökohde"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
