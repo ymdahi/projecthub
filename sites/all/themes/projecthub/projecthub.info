@@ -1,0 +1,46 @@
+name = ProjectHub Subtheme
+description = Bootstrap subtheme for ProjectHub web app.
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[title_meta]     = 'Title Meta'
+regions[content_top]    = 'Content Top'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_small]  = 'Sidebar Small'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/projecthub.css
+stylesheets[all][] = css/login.css
+stylesheets[all][] = https://fonts.googleapis.com/css?family=Roboto
+stylesheets[all][] = vendor/slick-slider-1.6.0/slick.css
+stylesheets[all][] = vendor/slick-slider-1.6.0/slick-theme.css
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = js/projecthub.js
+scripts[] = js/sticky-kit.min.js
+scripts[] = js/readmore.min.js
+scripts[] = vendor/slick-slider-1.6.0/slick.min.js
+;scripts[] = js/jquery.matchHeight-min.js

@@ -1,0 +1,821 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+#skip-link {
+  position: absolute;
+  z-index: 10000;
+  background-color: #fff;
+}
+
+.region-sidebar-second .block.no-wrapping {
+  background-color: unset;
+  padding: 0;
+  box-shadow: unset;
+}
+
+/**
+ Alerts and Messages
+ */
+.alert {
+  border: 0px;
+  border-radius: 0px;
+}
+
+
+/*******************/
+/*** MAIN LAYOUT ***/
+/*******************/
+
+.main-wrapper {
+  margin-left: 250px;
+}
+
+.main-wrapper .main-container {
+  min-height: calc(100vh - 365px);
+}
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 1200px) {
+  
+}
+
+@media (min-width: 1920px) {
+  
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 250px;
+  min-height: 100vh;
+  padding-bottom: 100px;
+  background: #1E88E5;
+  background: -webkit-linear-gradient(left, #1E88E5, #2196F3);
+  background: -o-linear-gradient(left, #1E88E5, #2196F3);
+  background: -moz-linear-gradient(left, #1E88E5, #2196F3);
+  background: linear-gradient(left, #1E88E5, #2196F3);
+}
+
+/* Responsive Navigation */
+@media(max-width:767px){
+  .main-wrapper {
+    margin-left: 0;
+  }
+  .sidebar-nav {
+    visibility: hidden;
+    opacity: 0;
+    height: 100vh !important;
+    width: 100% !important;
+  }
+  .sidebar-in .sidebar-nav {
+    transition: opacity 0.1s linear, visibility 0.1s linear;
+    visibility: visible;
+    opacity: 1;
+    overflow-y: auto;
+  }
+  .sidebar-in  {
+    overflow: hidden;
+    position: fixed;
+  }
+}
+
+
+
+/******************/
+/*** NAVIGATION ***/
+/******************/
+.sidebar-nav a {
+  color: #fff;
+}
+.sidebar-header {
+  position: relative;
+  background-color: #2196f3;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+}
+.sidebar-toggle-btn {
+  float: right;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  background-color: transparent;
+}
+.sidebar-toggle-btn:hover, .sidebar-toggle-btn:focus, .sidebar-toggle-btn:active {
+  background-color: #1976D2;
+  color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+@media(min-width:767px){
+  .sidebar-header {
+    text-align: center;
+  }
+  .sidebar-toggle-btn {
+    display: none;
+  }
+}
+.sidebar-header a {
+  font-size: 16px;
+  display: inline-block;
+  height: 100%;
+  color: #fff;
+}
+.sidebar-header a:hover {
+  text-decoration: none;
+}
+.sidebar-header a .logo {
+  height: 25px;
+}
+
+
+.sidebar-profile-block {
+  text-align: center;
+  margin: 30px 30px 5px 30px;
+}
+.sidebar-profile-block .views-field-picture img {
+  border-radius: 50%;
+  display: inline-block;
+  width: 80px;
+}
+.sidebar-profile-block .profile-name a {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.sidebar-nav #block-system-user-menu .nav {
+  padding: 0 30px;
+  text-align: center;
+}
+.sidebar-nav #block-system-user-menu .nav > li {
+  display: inline-block;
+}
+.sidebar-nav #block-system-user-menu .nav > li > a {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 12px;
+}
+.sidebar-nav #block-system-user-menu .nav > li > a:hover, .sidebar-nav #block-system-user-menu .nav > li > a:focus {
+  text-decoration: underline;
+  background: transparent;
+}
+
+
+.nav > li > a {
+  transition: background-color 0.1s linear;
+  padding: 10px 30px;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #1976D2;
+  box-shadow: inset 0 0 2px rgba(0,0,0,0.1);
+}
+.nav > li.active > a {
+  background-color: #f5f5f5;
+  color: #424242;
+}
+
+.sidebar-nav .nav {
+  padding-top: 30px;
+}
+
+li.leaf.separator-above {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.menu > .leaf > a .fa {
+  width: 15px;
+  margin-right: 15px;
+}
+
+
+#block-menu-menu-content-creation-menu li {
+  margin: 10px 30px;
+}
+#block-menu-menu-content-creation-menu li a {
+  background-color: #42a5f5;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  transition: box-shadow 0.1s linear, background-color 0.1s linear;
+  padding: 10px;
+}
+#block-menu-menu-content-creation-menu li a:hover, #block-menu-menu-content-creation-menu li a:focus {
+  background-color: #64b5f6;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, .15);
+}
+#block-menu-menu-content-creation-menu li a:active {
+  box-shadow: inset 0 1px 10px rgba(0, 0, 0, .15);
+}
+
+#block-search-form #search-block-form {
+  margin: 10px 10px;
+}
+#block-search-form #search-block-form .input-group .form-text,
+#block-search-form #search-block-form .input-group .input-group-btn button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #1565c0;
+  border-color: #1565c0;
+  color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#block-search-form #search-block-form .input-group .form-text::placeholder {
+  color: #ccc;
+}
+
+
+.menu-dark ul.menu {}
+.menu-dark ul.menu > li {}
+.menu-dark ul.menu > li > a {
+  color: #337ab7;
+  font-weight: bold;
+}
+.menu-dark ul.menu > li.active > a.active {
+  background-color: #1976D2;
+  color: #fff;
+}
+.menu-dark ul.menu > li > a:hover,
+.menu-dark ul.menu > li > a:focus{
+  background-color: #1976D2;
+  color: #fff;
+}
+
+
+
+
+/********************/
+/*** MAIN SECTION ***/
+/********************/
+.header-container {
+  background-color: #fafafa;
+}
+
+.header-container .easy-breadcrumb {
+  height: 50px;
+  line-height: 50px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  background-color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 30px;
+}
+.header-container .easy-breadcrumb, .header-container .easy-breadcrumb a {
+  color: #9e9e9e;
+}
+.header-container .easy-breadcrumb .easy-breadcrumb_segment-separator {
+  margin: 0 10px;
+}
+
+.header-container .page-title-container {
+  padding: 30px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+h1.page-header {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-size: 25px;
+}
+
+.main-container {
+  margin-top: 20px;
+}
+
+.region-content .block,
+.region-sidebar-first .block,
+.region-sidebar-second .block {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+/**
+ * Sidebar Card Blocks
+ */
+.card.sidebar-card {
+
+}
+
+/**
+ * Tabs
+ */
+ul.tabs--primary {
+  border-bottom: 0px;
+}
+ul.tabs--primary > li {
+
+}
+ul.tabs--primary > li > a {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+ul.tabs--primary > li > a:hover,
+ul.tabs--primary > li > a:focus {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+ul.tabs--primary > li.active > a {
+  border-bottom-color: #CCC;
+}
+ul.tabs--primary > li.active > a:focus,
+ul.tabs--primary > li.active > a:hover {
+  border-bottom-color: #adadad;
+}
+ul.tabs--primary > li.edit-link-icon a:before { 
+  content: '\f040';
+  font-family: FontAwesome;
+  font-size: inherit;
+  margin-right: 10px;
+}
+ul.tabs--primary > li.result-link-icon a:before { 
+  content: '\f1fe';
+  font-family: FontAwesome;
+  font-size: inherit;
+  margin-right: 10px;
+}
+
+/* CONTENT FIELDS */
+div.field {
+  margin-bottom: 15px;
+}
+
+
+
+
+/* JOB FORM, PROJECT FORM, H5P FORM */
+.page-node-add-job #block-system-main,
+.page-node-edit.node-type-job #block-system-main,
+.page-node-add-project #block-system-main,
+.page-node-edit.node-type-project #block-system-main,
+.page-node-add-h5p-content #block-system-main,
+.page-node-edit.node-type-h5p-content #block-system-main
+ {
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+form.node-job-form .form-actions#edit-actions,
+form.node-project-form .form-actions#edit-actions {
+  padding: 25px;
+  background: #fff;
+}
+form.node-job-form .form-actions button.form-submit,
+form.node-project-form .form-actions button.form-submit {
+  padding: 10px 20px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.1s linear, background-color 0.1s linear;
+  margin-left: 5px;
+}
+form.node-job-form .form-actions button#edit-submit,
+form.node-project-form .form-actions button#edit-submit {
+  background-color: #4caf50;
+  border-color: #4caf50;
+  color: #fff;
+    font-size: 20px;
+  padding: 15px 30px;
+}
+form.node-job-form .form-actions button#edit-submit:hover,
+form.node-project-form .form-actions button#edit-submit:hover {
+  box-shadow: 0 1px 10px rgba(0,0,0,0.25);
+  background-color: #43a047;
+  border-color: #43a047;
+}
+form.node-job-form .form-item > .form-control,
+form.node-project-form .form-item > .form-control {
+  width: auto;
+}
+
+.node-form .panel-default {
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 0;
+}
+.node-form .panel-default .panel-heading {
+  background-color: transparent;
+}
+.form-group:last-child, .panel:last-child {
+    margin-bottom: 20px;
+}
+
+.field-name-field-dimensions .form-item {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/*clean up multi-file fields*/
+.field-type-file .tabledrag-toggle-weight-wrapper, .field-type-file .managed-files thead,
+.field-type-image .tabledrag-toggle-weight-wrapper, .field-type-image .managed-files thead,
+.field-type-3dmodel .tabledrag-toggle-weight-wrapper, .field-type-3dmodel .managed-files thead {
+  display: none;
+}
+.field-type-file .managed-files tbody > tr > td,
+.field-type-image .managed-files tbody > tr > td,
+.field-type-3dmodel .managed-files tbody > tr > td  {
+  border-top: none;
+}
+
+
+
+
+
+/*** PROJECTS FEED (FRONT PAGE, Taxonomy Views) ***/
+body.page-projects #block-system-main,
+body.page-taxonomy-term #block-system-main {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+.thumbnail.project-card {
+  border: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  padding: 0px;
+  transition: 250ms;
+}
+.thumbnail.project-card:hover, .thumbnail.project-card:focus {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 250ms;
+}
+.thumbnail.project-card .caption {
+  padding: 15px;
+  color: #777;
+}
+.project-card a {
+  color: #333;
+}
+.project-card h4 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.project-card-overlay {
+  position: absolute;
+  top: 15px;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
+}
+.project-card-overlay a {
+  color: #fff;
+}
+.project-card-author-picture img.img-responsive {
+  display: inline-block;
+  width: 25px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: #fff;
+  margin-right: 4px;
+}
+.project-card-footer {
+  display: flex;
+  margin-top: 15px;
+  overflow: hidden;
+}
+.project-card-footer .pcf-item {
+  flex: 1 0 auto;
+  margin-right: 10px;
+}
+.view.view-projects-feed .pagination {
+  display: block;
+  clear: both;
+  padding: 15px;
+}
+
+
+
+/**
+ * Footer 
+ */
+.footer .block > p {
+  color: #777;
+}
+
+
+/*** JOBS DASHBOARDS ***/
+/* VIEWS TABLES */
+.view .views-table th.views-field {
+  border-bottom-width: 1px;
+}
+.view .views-table td.views-field, .view th.views-field {
+  border-top: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.view .views-table td.views-field a {
+  color: #333;
+}
+.table-hover > tbody > tr:hover {
+  transition: background-color 0.1s linear;
+}
+.clickable-row:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+/* Add badge to 'Needs Revision' workflow state items */
+.views-field.views-field-sid.workflow-sid-3::after {
+  content: '!';
+  display: inline-block;
+  background: #777;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  margin-left: 5px;
+}
+/* Responsive Bootstrap Tables: card layout */
+@media(max-width:991px){
+  .view .views-table thead {
+    display: none;
+  }
+  .view .views-table tr {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    background-color: #f9f9f9;
+  }
+  .view .views-table td.views-field {
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .view .views-table td.views-field::before {
+    content: attr(data-title);
+    display: inline-block;
+    font-size: 90%;
+    color: #777;
+    margin-right: 15px;
+    width: 80px;
+  }
+}
+/* Separate Archived Jobs section from the rest of the Dashboard */
+#block-views-jobs-dashboard-block-1 {
+  margin-top: 20px;
+}
+
+
+
+/**
+ * My Favourites
+**/
+body.page-my-favourites #block-system-main {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+
+
+
+/* BETTER LOGIN PAGE */
+#auth_box h1#the_logo {
+  background: #1E88E5;
+  background: -webkit-linear-gradient(bottom, #1E88E5, #2196F3);
+  background: -o-linear-gradient(bottom, #1E88E5, #2196F3);
+  background: -moz-linear-gradient(bottom, #1E88E5, #2196F3);
+  background: linear-gradient(left, #bottom, #2196F3);
+  padding: 20px 0;
+}
+#auth_box h1#the_logo a {
+  color: #fff;
+  font-size: 24px;
+  display: block;
+}
+#auth_box h1#the_logo img {
+    max-height: 50px;
+}
+#auth_box #middle_part {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  border-radius: 0;
+}
+#auth_box #block-system-main {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+
+
+
+/* CKEDITOR STYLES */
+.cke.cke {
+  box-shadow: none;
+}
+.cke.cke .cke_toolgroup, .cke.cke .cke_button, .cke.cke a.cke_combo_button {
+  border: none;
+  background: transparent;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.cke.cke a.cke_button_on, .cke.cke .cke_combo_on a.cke_combo_button {
+  background-color: #ddd ;
+}
+.cke.cke .cke_button_off:hover, .cke.cke a.cke_combo_off:hover,
+.cke.cke .cke_button_off:active, .cke.cke a.cke_combo_off:active,
+.cke.cke .cke_button_off:focus, .cke.cke a.cke_combo_off:focus {
+  background-color: #eee ;
+}
+.cke.cke .cke_button_on:hover, .cke.cke a.cke_combo_on:hover,
+.cke.cke .cke_button_on:active, .cke.cke a.cke_combo_on:active,
+.cke.cke .cke_button_on:focus, .cke.cke a.cke_combo_on:focus {
+  background-color: #ccc ;
+}
+
+
+
+/* MENU LINK BADGES (and clearing opinionated styles from the module) */
+.link-badge {
+  background: #1976d2;
+  color: #fff;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: none;
+  box-shadow: none;
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+}
+.link-badge-badge-wrapper {
+  position: static;
+  margin: 0;
+  float: right;
+}
+:not(.link-badge-text) > .link-badge-badge-wrapper {
+  display: none;
+}
+
+
+
+
+
+
+/**
+ * BUTTONS
+ */
+.btn-primary {
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #1976d2;
+  border-color: #1976d2;
+}
+
+.btn-success {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+.btn-success:hover, .btn-success:active, .btn-success:focus {
+  background-color: #43a047;
+  border-color: #43a047;
+}
+
+.block.job-workflow-button,
+.region-sidebar-second > .block.job-workflow-button >.view {
+  background-color: unset;
+  box-shadow: unset;
+  padding: 0;
+}
+
+
+/**
+ * Flags
+**/
+
+/* flag links with badge */
+.flag-btn-with-counter .flag > .badge {
+  margin-left: 10px;
+}
+.flag-btn-with-counter .unflag-action > .badge {
+  background-color: #09f;
+  color: #fff;
+}
+
+/* report user */
+.flag-report-user > a.flag-action {}
+.flag-report-user > a.flag-action:hover, .flag-report-user > a.flag-action:focus {
+  background-color: #c82333;
+  border-color: #bd2130;
+  color: #fff;
+}
+
+/* report project */
+.flag-report > a.flag-action:hover, .flag-report > a.flag-action:focus {
+  background-color: #c82333;
+  border-color: #bd2130;
+  color: #fff;
+}
+
+
+/* favourites */
+.flag-favourites .unflag-action {
+  color: #09f;
+}
+
+
+
+/* HEADINGS */
+h2.block-title {
+  font-size: 26px;
+}
+h2.label-above {
+  margin: 15px 0 25px;
+  font-size: 25px;
+}
+h2.label-above.title-on-grey {
+  color: #AAA;
+  font-size: 25px;
+}
+.field .label-above {
+  margin-bottom: 10px;
+  color: #777;
+  font-size: 12px;
+}
+
+
+/* MISC FIXES */
+/* Hide white label for dimensions fields */
+.dimension.dimension-simple .label {
+  display: none;
+}
+.auto-refresh {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  opacity: 0.1;
+}
+img.img-responsive {
+  width: 100%;
+}
+
+
+
+
+
+
+/* UTILITIES */
+.margin-top-20 {
+  margin-top: 20px;
+}
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+.text-grey {
+  color: #777;
+}
+
+
+/**
+ * Wells and Cards
+ */
+.well {}
+
+.white-well {
+  background-color: #fff;
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+
+/**
+ * Region-sidebar-second Blocks
+ */
+.region-sidebar-second > .block {
+  padding: 0px;
+}
+.region-sidebar-second .block > h2.block-title {
+  font-size: 16px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+}
+.region-sidebar-second > .block >.view {
+  padding: 15px;
+}

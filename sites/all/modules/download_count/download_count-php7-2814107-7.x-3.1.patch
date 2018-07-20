@@ -1,0 +1,39 @@
+From df2c662e6454e22918d78215683a321a49b31d99 Mon Sep 17 00:00:00 2001
+From: Tam Software <fh@tamsoftware.info>
+Date: Sat, 26 Nov 2016 13:25:51 +0000
+Subject: [PATCH] fix for PHP 7 and MySQL 5.7
+
+---
+ download_count.module             | 2 +-
+ includes/download_count.field.inc | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/download_count.module b/download_count.module
+index ee51116..7c5ca87 100644
+--- a/download_count.module
++++ b/download_count.module
+@@ -188,7 +188,7 @@ function download_count_file_download_access_alter(&$grants, $file, $entity_type
+     'fid' => $file['fid'],
+     'uid' => $user->uid,
+     'type' => $entity_type,
+-    'id' => $entity->$entity_info['entity keys']['id'],
++    'id' => $entity->{$entity_info['entity keys']['id']},
+     'ip_address' => $ip,
+     'referrer' => $referrer,
+     'timestamp' => $time,
+diff --git a/includes/download_count.field.inc b/includes/download_count.field.inc
+index 4ba22c0..eced60f 100644
+--- a/includes/download_count.field.inc
++++ b/includes/download_count.field.inc
+@@ -28,7 +28,7 @@ function download_count_field_formatter_view($entity_type, $entity, $field, $ins
+ 
+   foreach ($items as $delta => $item) {
+     if ($access) {
+-      $item['downloads'] = db_query("SELECT COUNT(fid) from {download_count} where fid = :fid AND type = :type AND id = :id", array(':fid' => $item['fid'], ':type' => $entity_type, ':id' => $entity->$entity_info['entity keys']['id']))->fetchField();
++      $item['downloads'] = db_query("SELECT COUNT(fid) from {download_count} where fid = :fid AND type = :type AND id = :id", array(':fid' => $item['fid'], ':type' => $entity_type, ':id' => $entity->{$entity_info['entity keys']['id']}))->fetchField();
+     }
+     $element[$delta] = array(
+       '#theme' => !$access ? 'file_link' : 'download_count_file_field_formatter',
+-- 
+2.8.1
+
